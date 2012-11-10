@@ -1,6 +1,6 @@
-NodeJS Kickstart Webapp
+NodeJS Prelaunch Webapp
 =======================
-For you to start a new webapp
+For you to start a new webapp for marketing
 
 How to Run
 ----------
