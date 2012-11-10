@@ -1,25 +1,84 @@
 extends layout
 
 block content
-  div.container
-    div.hero-unit
-      h1 Hello, world!
-      p This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
-      p
-        a.btn.btn-primary.btn-large Learn more »
+
+  div#carousel.carousel.slide
+    div.carousel-inner
+      div.item.active
+        img(src='http://twitter.github.com/bootstrap/assets/img/examples/slide-01.jpg')
+        div.container
+          div.carousel-caption
+            h1 Example headline
+            p.lead Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+            a.btn.btn-primary.btn-large(href='#') Sign up today
+      div.item
+        img(src='http://twitter.github.com/bootstrap/assets/img/examples/slide-02.jpg')
+        div.container
+          div.carousel-caption
+            h1 Another example headline.
+            p.lead Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+            a.btn.btn-primary.btn-large(href='#') Learn more
+      div.item
+        img(src='http://twitter.github.com/bootstrap/assets/img/examples/slide-03.jpg')
+        div.container
+          div.carousel-caption
+            h1 One more for good measure.
+            p.lead Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+            a.btn.btn-primary.btn-large(href='#') Browse gallery
+    a.left.carousel-control(href='#carousel', data-slide='prev') ‹
+    a.right.carousel-control(href='#carousel', data-slide='next') ›
+
+  div.container.marketing
     div.row
       div.span4
+        img.img-circle(src='http://placehold.it/140x140')
         h2 Heading
-        p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-        p
+        p Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+        p 
           a.btn View details »
       div.span4
+        img.img-circle(src='http://placehold.it/140x140')
         h2 Heading
-        p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-        p
+        p Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+        p 
           a.btn View details »
       div.span4
+        img.img-circle(src='http://placehold.it/140x140')
         h2 Heading
-        p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-        p
+        p Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+        p 
           a.btn View details »
+
+    hr.featurette-divider
+
+    div.featurette
+      img.featurette-image.pull-right(src='http://twitter.github.com/bootstrap/assets/img/examples/browser-icon-chrome.png')
+      h2.featurette-heading First featurette headling. 
+        span.muted It'll blow your mind.
+      p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+
+    hr.featurette-divider
+
+    div.featurette
+      img.featurette-image.pull-left(src='http://twitter.github.com/bootstrap/assets/img/examples/browser-icon-firefox.png')
+      h2.featurette-heading Oh yeah, it's that good. 
+        span.muted See for yourself.
+      p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+
+    hr.featurette-divider
+
+    div.featurette
+      img.featurette-image.pull-right(src='http://twitter.github.com/bootstrap/assets/img/examples/browser-icon-safari.png')
+      h2.featurette-heading And lastly, this one. 
+        span.muted Checkmate.
+      p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+
+    hr.featurette-divider
+
+    footer
+      p.pull-right
+        a(href='#') Back to top
+      p &copy; 2012 Company, Inc. · 
+        a(href='#') Privacy
+         · 
+        a(href='#') Terms
